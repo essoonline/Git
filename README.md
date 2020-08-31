@@ -22,3 +22,25 @@ git config --global user.email "username@gmail.com"
 cd myproject<br>
 git init
 </pre>
+
+### Git Status
+ตรวจสอบสถานะของ repository ของเรา
+<pre
+git status
+</pre>
+
+### Git Log
+คำสั่งตรวจสอบประวัติไฟล์ต่างๆ ใน repository ของเรา คล้าย git status
+<pre>
+git log
+</pre>
+
+### Git Remote
+เป็นคำสั่งจัดการ URL ของ repository ว่าเราจะฝากโค้ดไว้ที่ใด ตัวอย่างนี้จะเป็นการเพิ่ม URL ตั้งชื่อว่า origin
+<pre>
+git remote add origin git@github.com:myuser/mygit.git
+<pre>
+สำหรับการลบ URL จะใช้คำสั่ง
+<pre>
+git remote rm origin
+</pre>
