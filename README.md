@@ -25,7 +25,7 @@ git init
 
 ### Git Status
 ตรวจสอบสถานะของ repository ของเรา
-<pre
+<pre>
 git status
 </pre>
 
