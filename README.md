@@ -1,3 +1,9 @@
+### Set name credential: ✋
+
+<pre>
+git config --global user.name <b>"germancutraro"</b>
+</pre>
+
 Git ประกอบด้วยอะไร?
 Git ประกอบด้วย Server และ Client
 Server ก็จะมีผู้ให้บริการหลายที่ด้วยกัน เช่น GitHub, Bitbucket หรือเราสามารถหาโปรแกรม Git Server มาติดที่เครื่องใช้เองก็ได้
