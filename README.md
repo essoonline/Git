@@ -56,14 +56,14 @@ git add index.html
 git add .
 </pre>
 
-## Git Commit
+### Git Commit
 เป็นการยืนยันการแก้ไขไฟล์จาก Staging ไปจัดเก็บใน Local Repository
 <pre>
 git commit -m "My Comment to Add File"
 โดย -m หมายถึงข้อความที่เป็น comment
 </pre>
 
-## Git Reset
+### Git Reset
 เป็นการยกเลิกการแก้ไขไฟล์ หรือลบไฟล์ และนำไฟล์ version ปัจจุบันกลับมา
 <pre>
 git reset index.html
@@ -81,25 +81,25 @@ git checkout index.html
 git push origin master
 </pre>
 
-## Git Fetch
+### Git Fetch
 เป็นการ preview ดูว่า Local และ Remote Repository มีความแตกต่างกันหรือไม่ ซึ่งมันจะบอกว่า Local ของเราเท่ากัน, ใหม่กว่า หรือล้าสมัยกว่า Remote อยู่กี่ commit
 <pre>
 git fetch
 </pre>
 
-## Git Merge
+### Git Merge
 เป็นคำสั่งในการรวม Local และ Remote Repository เข้าด้วยกัน หรือทำให้ Local และ Remote เท่ากันนั่นเอง
 <pre>
 git merge
 </pre>
 
-## Git Pull
+### Git Pull
 เป็นการดึงโค้ดโปรแกรมที่มีการเปลี่ยนแปลงจาก Remote มายัง Local เปรียบเสมือนการใช้คำสั่ง git fetch + git merge นั่นเอง
 <pre>
 git pull origin master
 </pre>
 
-## Git Clone
+### Git Clone
 เป็นการดึงโค้ดโปรแกรม และไฟล์ต่างๆ จาก Remote มายัง Local
 <pre>
 git clone git://github.com/myuser/mygit.git
@@ -122,3 +122,16 @@ $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 > Enter passphrase (empty for no passphrase): [Type a passphrase]<br>
 > Enter same passphrase again: [Type passphrase again]
 </pre>
+
+## Adding your SSH key to the ssh-agent
+1. Ensure the ssh-agent is running. You can use the "Auto-launching the ssh-agent" instructions in "Working with SSH key passphrases", or start it manually:
+<pre>
+# start the ssh-agent in the background
+$ eval $(ssh-agent -s)
+> Agent pid 59566
+</pre>
+2. Add your SSH private key to the ssh-agent. If you created your key with a different name, or if you are adding an existing key that has a different name, replace id_rsa in the command with the name of your private key file.
+<pre>
+$ ssh-add ~/.ssh/id_rsa
+</pre>
+3. Add the SSH key to your GitHub account.
