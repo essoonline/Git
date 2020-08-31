@@ -104,3 +104,21 @@ git pull origin master
 <pre>
 git clone git://github.com/myuser/mygit.git
 </pre>
+
+## SSH key
+
+1. Open Git Bash.
+<br><br>
+2. Paste the text below, substituting in your GitHub email address.
+<pre>
+$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+</pre>
+3. When you're prompted to "Enter a file in which to save the key," press Enter. This accepts the default file location.
+<pre>
+> Enter a file in which to save the key (/c/Users/you/.ssh/id_rsa):[Press enter]
+</pre>
+4. At the prompt, type a secure passphrase. For more information
+<pre>
+> Enter passphrase (empty for no passphrase): [Type a passphrase]<br>
+> Enter same passphrase again: [Type passphrase again]
+</pre>
