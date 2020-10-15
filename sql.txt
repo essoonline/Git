@@ -1,0 +1,13 @@
+UPDATE tableB
+SET tableB.value = (
+    SELECT tableA.value 
+    FROM tableA
+    WHERE tableA.id = tableB.id
+);
+
+
+UPDATE table SET columB = columA
+
+
+INSERT INTO TableB (value, value)
+SELECT value, value FROM TableA
