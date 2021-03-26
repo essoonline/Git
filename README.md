@@ -7,6 +7,25 @@ Server ก็จะมีผู้ให้บริการหลายที�
 <br><br>
 Client เป็น Plugin เมื่อถูกติดตั้งแล้วจะสามารถพิมพ์คำสั่งใน Command Line ได้ หรือเครื่องมือบางตัวอาจจะเป็นลักษณะ GUI ให้ใช้ง่ายๆ โดยทั่วไปจะดาวน์โหลด Git Client ที่ https://git-scm.com/downloads
 
+## เริ่มต้นใช้งาน
+…or create a new repository on the command line
+<pre>
+echo "# test" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:username/test.git
+git push -u origin main
+</pre>
+
+…or push an existing repository from the command line
+<pre>
+git remote add origin git@github.com:username/test.git
+git branch -M main
+git push -u origin main
+</pre>
+
 ## คำสั่งพื้นฐาน
 
 ### Git Config
